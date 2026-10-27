@@ -16,8 +16,8 @@ header {
 }
 
 .logo svg {
-    width: 1.35rem;
-    height: 1.35rem;
+    width: 1.75rem;
+    height: 1.75rem;
 }
 
 .logo h1 {
@@ -73,4 +73,91 @@ header {
     height: 100% !important;
     display: flex !important;
     align-items: center;
+}
+
+@media (min-width: 768px) {
+    header {
+        max-height: 4rem;
+    }
+
+    .logo {
+        gap: .6rem;
+    }
+
+    .logo svg {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .selector-idioma {
+        width: 4.5rem;
+        height: 2rem;
+
+    }
+
+    ::ng-deep .selector-idioma .mat-button-toggle {
+        font-size: .75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        max-height: clamp(4.75rem, 6.5vh, 5.5rem);
+    }
+
+    .logo {
+        gap: .85rem;
+    }
+
+    .logo svg {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .logo h1 {
+        font-size: 1.35rem;
+    }
+
+    .selector-idioma {
+        width: 5.5rem;
+        height: 2.4rem;
+
+    }
+
+    ::ng-deep .selector-idioma .mat-button-toggle {
+        font-size: .85rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        max-height: clamp(6.5rem, 8vh, 8.5rem);
+    }
+
+    .logo {
+        gap: clamp(1.15rem, 1.2vw, 1.6rem);
+    }
+
+    .logo svg {
+        height: clamp(3rem, 2.8vw, 4rem);
+        width: clamp(3rem, 2.8vw, 4rem);
+    }
+
+    .logo h1 {
+        font-size: clamp(1.85rem, 1.5vw, 2.35rem);
+    }
+
+    .selector-idioma {
+        width: clamp(7.5rem, 6vw, 9.25rem);
+        height: clamp(3.25rem, 3vw, 3.85rem);
+
+    }
+
+    ::ng-deep .selector-idioma .mat-button-toggle {
+        font-size: clamp(1.15rem, 1vw, 1.35rem);
+    }
 }
