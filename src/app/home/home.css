@@ -1,0 +1,32 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo h1 {
+    color: white;
+}
+
+.idioma {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+::ng-deep .selector-idioma .mat-button-toggle-checkbox-wrapper,
+::ng-deep .selector-idioma .mat-pseudo-checkbox {
+    display: none !important;
+}
