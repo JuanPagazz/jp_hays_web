@@ -22,21 +22,21 @@ html {
 
 @media (min-width: 768px) {
     body {
-        max-width: 48rem;
+        max-width: clamp(48rem, 92vw, 62rem);
         padding: 2rem 1.5rem;
     }
 }
 
 @media (min-width: 1024px) {
     body {
-        max-width: clamp(72rem, 88vw, 84rem);
+        max-width: clamp(72rem, 100vw, 84rem);
         padding: clamp(1.6rem, 3vw, 2.6rem) clamp(1.8rem, 2.6vw, 2.4rem);
     }
 }
 
 @media (min-width: 1440px) {
     body {
-        max-width: clamp(100rem, 85vw, 150rem);
+        max-width: clamp(90rem, 118vw, 152rem);
         padding: clamp(2.2rem, 3.2vw, 3.6rem) clamp(2.6rem, 3.8vw, 4.2rem);
     }
 }

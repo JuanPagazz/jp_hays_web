@@ -63,3 +63,10 @@ section p {
     justify-content: flex-start;
     gap: 0.4rem;
 }
+
+@media (min-width: 768px) {
+    section {
+        width: 60%;
+        gap: 1.2rem;
+    }
+}
