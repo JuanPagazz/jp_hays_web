@@ -255,6 +255,36 @@ main {
     main {
         gap: clamp(1.6rem, 3vw, 2.6rem);
     }
+
+    .background-image-responsive {
+        width: 60dvw;
+    }
+
+    .background-image-responsive::after {
+        background:
+            linear-gradient(
+                to bottom,
+                #03070D 0%,
+                rgba(3, 7, 13, .72) 10%,
+                rgba(3, 7, 13, 0) 26%,
+                rgba(3, 7, 13, 0) 70%,
+                #03070D 100%
+            ),
+            radial-gradient(
+                ellipse 30% 100% at 0% 68%,
+                #03070D 0%,
+                rgba(3, 7, 13, 1) 50%,
+                rgba(3, 7, 13, .92) 70%,
+                rgba(3, 7, 13, 0) 100%
+            ),
+            linear-gradient(
+                to top,
+                #03070D 0%,
+                rgba(3, 7, 13, .92) 5%,
+                rgba(3, 7, 13, .68) 12%,
+                rgba(3, 7, 13, 0) 25%
+            );
+    }
 }
 
 @media (min-width: 1440px) {
