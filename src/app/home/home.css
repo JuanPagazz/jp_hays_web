@@ -18,14 +18,14 @@ header {
 }
 
 .logo svg {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 1.95rem;
+    height: 1.95rem;
     z-index: 5;
 }
 
 .logo h1 {
     color: white;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1rem;
     z-index: 5;
 }
@@ -55,7 +55,7 @@ header {
     min-width: 0;
     background-color: #03070D;
     color: #8E9CAE;
-    font-size: .7rem;
+    font-size: .78rem;
     text-align: center;
     transition: all 0.4s linear;
 }
@@ -117,16 +117,23 @@ main {
             rgba(3, 7, 13, 0) 25%
         );
     pointer-events: none;
+    z-index: 1;
 }
 
 .background-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .7;
+    opacity: .65;
     filter:
         blur(.095rem)
-        brightness(.7);
+        brightness(.65);
+}
+
+:host {
+    display: flex;
+    flex-flow: column;
+    gap: 2.8rem;
 }
 
 @media (min-width: 768px) {
@@ -139,12 +146,12 @@ main {
     }
 
     .logo svg {
-        height: 2rem;
-        width: 2rem;
+        height: 2.2rem;
+        width: 2.2rem;
     }
 
     .logo h1 {
-        font-size: 1.2rem;
+        font-size: 1.32rem;
     }
 
     .selector-idioma {
@@ -154,7 +161,7 @@ main {
     }
 
     ::ng-deep .selector-idioma .mat-button-toggle {
-        font-size: .75rem;
+        font-size: .83rem;
     }
 
     main {
@@ -172,12 +179,12 @@ main {
     }
 
     .logo svg {
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 2.75rem;
+        width: 2.75rem;
     }
 
     .logo h1 {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
     }
 
     .selector-idioma {
@@ -187,7 +194,7 @@ main {
     }
 
     ::ng-deep .selector-idioma .mat-button-toggle {
-        font-size: .85rem;
+        font-size: .94rem;
     }
     
     main {
@@ -205,12 +212,12 @@ main {
     }
 
     .logo svg {
-        height: clamp(3rem, 2.8vw, 4rem);
-        width: clamp(3rem, 2.8vw, 4rem);
+        height: clamp(3.3rem, 3.08vw, 4.4rem);
+        width: clamp(3.3rem, 3.08vw, 4.4rem);
     }
 
     .logo h1 {
-        font-size: clamp(1.85rem, 1.5vw, 2.35rem);
+        font-size: clamp(2.05rem, 1.65vw, 2.6rem);
     }
 
     .selector-idioma {
@@ -220,7 +227,7 @@ main {
     }
 
     ::ng-deep .selector-idioma .mat-button-toggle {
-        font-size: clamp(1.15rem, 1vw, 1.35rem);
+        font-size: clamp(1.27rem, 1.1vw, 1.5rem);
     }
 
     main {

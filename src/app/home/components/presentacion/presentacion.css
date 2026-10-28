@@ -1,0 +1,65 @@
+section {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    z-index: 2;
+    gap: .9rem;
+}
+
+section h4 {
+    color: #8E9CAE;
+    font-size: 1.05rem;
+    z-index: 2;
+}
+
+section h2, .titulo-verde {
+    font-size: clamp(2.2rem, 8.25vw, 2.75rem);
+    z-index: 2;
+    color: white;
+    line-height: 1.15;
+}
+
+.titulo-verde {
+    display: block;
+    background: linear-gradient(90deg, #00df89 0%, #00f0ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+section p {
+    color: #8E9CAE;
+    font-size: 1.1rem;
+    z-index: 2;
+}
+
+.tecnologias {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.tecnologia p {
+    color: #8E9CAE;
+    font-size: 1.1rem;
+    z-index: 2;
+    font-weight: 600;
+}
+
+.tecnologia img {
+    z-index: 2;
+    height: 2.05rem;
+}
+
+.tecnologia {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.4rem;
+}
