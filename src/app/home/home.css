@@ -318,4 +318,34 @@ main {
     main {
         gap: clamp(2.2rem, 3.2vw, 3.6rem);
     }
+
+    .background-image-responsive {
+        width: 62dvw;
+    }
+
+    .background-image-responsive::after {
+        background:
+            linear-gradient(
+                to bottom,
+                #03070D 0%,
+                rgba(3, 7, 13, .72) 10%,
+                rgba(3, 7, 13, 0) 26%,
+                rgba(3, 7, 13, 0) 70%,
+                #03070D 100%
+            ),
+            radial-gradient(
+                ellipse 12% 100% at 0% 62%,
+                #03070D 0%,
+                rgba(3, 7, 13, 1) 50%,
+                rgba(3, 7, 13, .92) 70%,
+                rgba(3, 7, 13, 0) 100%
+            ),
+            linear-gradient(
+                to top,
+                #03070D 0%,
+                rgba(3, 7, 13, .92) 3%,
+                rgba(3, 7, 13, .68) 8%,
+                rgba(3, 7, 13, 0) 20%
+            );
+    }
 }

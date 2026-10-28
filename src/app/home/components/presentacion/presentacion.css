@@ -82,7 +82,7 @@ section p {
     }
 
     section h2, .titulo-verde {
-        font-size: (3.5rem, 5.2vw, 4.75rem);
+        font-size: clamp(3rem, 4.8vw, 3.8rem);
     }
 
     section p {
@@ -95,5 +95,33 @@ section p {
 
     .tecnologia p {
         font-size: 1.15rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    section {
+        width: 45%;
+        gap: 1.5rem;
+    }
+
+    section h4 {
+        font-size: clamp(1.35rem, 1.4vw, 1.8rem);
+    }
+
+    section h2, .titulo-verde {
+        font-size: clamp(3.6rem, 5vw, 4rem);
+    }
+
+    section p {
+        font-size: clamp(1.35rem, 1.4vw, 1.8rem);
+        line-height: 1.05;
+    }
+
+    .tecnologia img {
+        height: clamp(3rem, 2.5vw, 3.6rem);
+    }
+
+    .tecnologia p {
+        font-size: clamp(1.15rem, 1.1vw, 1.35rem);
     }
 }
