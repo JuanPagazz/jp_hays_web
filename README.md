@@ -8,7 +8,7 @@ This website was created as a part of my practice and projects as a front-end de
 
 # Demo
 
-
+https://juanpagazz.github.io/jp_hays_web/
 
 # Technologies
 
