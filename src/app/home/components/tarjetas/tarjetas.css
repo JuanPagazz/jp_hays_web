@@ -1,0 +1,38 @@
+:host {
+    width: 100%;
+}
+
+section {
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 3;
+}
+
+section h4 {
+    font-family: 'Caveat', 'Architects Daughter', 'Comic Sans MS', cursive;
+    font-size: .9rem;
+    color: #8E9CAE;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    transform: rotate(-3deg);
+    z-index: 3;
+}
+
+.flecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(20%, 100% - 48vw, 50%);
+    z-index: 3;
+}
+
+.flecha svg {
+    height: 3.75rem;
+    width: 4.75rem;
+    color: #8E9CAE;
+    z-index: 3;
+}
