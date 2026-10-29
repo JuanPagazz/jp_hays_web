@@ -36,3 +36,171 @@ section h4 {
     color: #8E9CAE;
     z-index: 3;
 }
+
+.tarjetas {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 1.25rem;
+    z-index: 3;
+}
+
+.empleo {
+    width: 80%;
+    padding: 1.25rem;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    border: 2px solid #4364F7;
+    border-radius: 1rem;
+    gap: 1rem;
+    z-index: 3;
+    background: radial-gradient(circle at 85% 15%, rgba(41, 98, 255, 0.2) 0%, transparent 60%), #050c0a;
+}
+
+.empleo .icon {
+    width: 2.5rem;
+    z-index: 3;
+}
+
+.empleo-texto {
+    width: clamp(30%, 100% - 12.5vw, 100%);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .75rem;
+    z-index: 3;
+}
+
+.empleo-texto h5 {
+    color: #5C82FF;
+    letter-spacing: 1.125px;
+    z-index: 3;
+}
+
+.empleo-texto h3 {
+    color: white;
+    font-size: clamp(1.25rem, 5vw, 1.45rem);
+    line-height: 1;
+    z-index: 3;
+}
+
+.empleo-texto .morado {
+    color: #5C82FF;
+    font-size: clamp(1.25rem, 5vw, 1.45rem);
+    z-index: 3;
+}
+
+.empleo-texto .br {
+    display: block;
+}
+
+.empleo-texto p {
+    color: #8E9CAE;
+    font-size: 0.8125rem;
+    z-index: 3;
+}
+
+.empleo a {
+    width: 60%;
+    padding: .6rem .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5C82FF;
+    color: #061026;
+    font-size: .85rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.empleo .bg-img {
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    width: clamp(5.5rem, 20vw, 9rem);
+    height: clamp(6rem, 21vw, 9rem);
+    filter: blur(.05rem) brightness(.95);
+    z-index: 2;
+}
+
+.servicios {
+    width: 80%;
+    padding: 1.25rem;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    border: 2px solid #00E599;
+    border-radius: 1rem;
+    gap: 1rem;
+    z-index: 3;
+    background: radial-gradient(circle at 85% 15%, rgba(0, 230, 119, 0.185) 0%, transparent 60%), #050c0a;
+}
+
+.servicios .icon {
+    width: 2.5rem;
+    z-index: 3;
+}
+
+.servicios-texto {
+    width: clamp(30%, 100% - 12.5vw, 100%);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .75rem;
+    z-index: 3;
+}
+
+.servicios-texto h5 {
+    color: #00FFA3;
+    letter-spacing: 1.125px;
+    z-index: 3;
+}
+
+.servicios-texto h3 {
+    color: white;
+    font-size: clamp(1.25rem, 5vw, 1.45rem);
+    line-height: 1;
+    z-index: 3;
+}
+
+.servicios-texto .verde {
+    display: block;
+    color: #00FFA3;
+    font-size: clamp(1.25rem, 5vw, 1.45rem);
+    z-index: 3;
+}
+
+.servicios-texto p {
+    color: #8E9CAE;
+    font-size: 0.8125rem;
+    z-index: 3;
+}
+
+.servicios a {
+    width: 60%;
+    padding: .6rem .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00FFA3;
+    color: #031811;
+    font-size: .85rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.servicios .bg-img {
+    position: absolute;
+    top: 7%;
+    right: 9%;
+    width: clamp(5.5rem, 20vw, 9rem);
+    height: clamp(6rem, 21vw, 9rem);
+    filter: blur(.05rem) brightness(.95);
+    z-index: 2;
+}
