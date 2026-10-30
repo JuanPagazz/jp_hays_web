@@ -30,6 +30,7 @@ section h2, .titulo-verde {
 }
 
 section p {
+    width: clamp(30%, 100% - 3.5vw, 100%);
     color: #8E9CAE;
     font-size: 1.1rem;
     z-index: 2;
@@ -64,7 +65,18 @@ section p {
     gap: 0.4rem;
 }
 
+@media (min-width: 600px) {
+    section p {
+        width: clamp(30%, 100% - 10vw, 100%);   
+    }
+}
+
 @media (min-width: 768px) {
+
+    section p {
+        width: clamp(30%, 100% - 5vw, 100%);
+    }
+
     section {
         width: 59.2%;
         gap: 1.2rem;
@@ -72,6 +84,11 @@ section p {
 }
 
 @media (min-width: 1024px) {
+
+    section p {
+        width: auto;
+    }
+
     section {
         width: 48%;
         gap: 1.5rem;
