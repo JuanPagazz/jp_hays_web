@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { MatButtonToggleModule} from '@angular/material/button-toggle';
 import { Presentacion } from './components/presentacion/presentacion';
 import { Tarjetas } from './components/tarjetas/tarjetas';
-import { Footer } from './components/footer/footer';
+import { Footer } from '../shared-c/footer/footer';
+import { LanguageSelector } from '../shared-c/language-selector/language-selector';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatButtonToggleModule, FormsModule, Presentacion, Tarjetas, Footer],
+  imports: [Presentacion, Tarjetas, Footer, LanguageSelector],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

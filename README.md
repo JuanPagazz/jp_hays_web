@@ -28,7 +28,7 @@ https://juanpagazz.github.io/jp_hays_web/
 /jp_hays_web
     package.json             # Project metadata, dependencies, and npm scripts
     angular.json             # Angular CLI project and build configuration
-    /public                  # Static assets (images, videos, etc...)
+    /public                  # Assets (images, videos, etc...)
     /src
         index.html            # Main HTML document and global font imports
         main.ts               # Client-side application
@@ -40,10 +40,14 @@ https://juanpagazz.github.io/jp_hays_web/
             app.ts            # Root application component
             app.html          # Root component template
             app.routes.ts     # Application routes
-            /home             # Main page
-                /components        # reusable components for home
-            /freelancer       # Freelancer page
-            /hiring           # Hiring page
+            /core                # App general logic
+               /i18n                # Translation settings
+            /shared              # Reusable components
+            /home                # Main page
+                /components        # Components for home
+                /i18n              # Translation for home
+            /freelancer          # Freelancer page
+            /hiring              # Hiring page
 ```
 
 # Routes
