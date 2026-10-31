@@ -91,3 +91,87 @@ section {
     cursor: pointer;
     z-index: 5;
 }
+
+@media (min-width: 768px) {
+    section {
+        padding-top: 1.25rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .disponible {
+        gap: .75rem;
+    }
+
+    .disponible .punto {
+        width: .8rem;
+        height: .8rem;
+    }
+
+    .disponible p {
+        font-size: 1rem;
+    }
+
+    .redes {
+        gap: .65rem;
+    }
+
+    .redes img {
+        width: 2.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    section {
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .disponible {
+        gap: .85rem;
+    }
+
+    .disponible .punto {
+        width: .85rem;
+        height: .85rem;
+    }
+
+    .disponible p {
+        font-size: clamp(1rem, 1.5vw, 1.15rem);
+    }
+
+    .redes {
+        gap: .75rem;
+    }
+
+    .redes img {
+        width: clamp(2.75rem, 3.5vw, 3rem);
+    }
+}
+
+@media (min-width: 1440px) {
+    section {
+        padding-top: 2rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .disponible {
+        gap: 1rem;
+    }
+
+    .disponible .punto {
+        width: .9rem;
+        height: .9rem;
+    }
+
+    .disponible p {
+        font-size: clamp(1.15rem, 1.2vw, 1.35rem);
+    }
+
+    .redes {
+        gap: .85rem;
+    }
+
+    .redes img {
+        width: clamp(3rem, 3vw, 3.5rem);
+    }
+}
