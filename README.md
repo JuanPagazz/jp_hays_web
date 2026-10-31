@@ -52,9 +52,15 @@ https://juanpagazz.github.io/jp_hays_web/
 
 # Routes
 
-- `/` - Main portfolio and personal introduction
-- `/freelancer` - Information for clients interested in freelance work
-- `/hiring` - Information for companies interested in hiring
+- `/es` - App with spanish traduction
+- `/en` - App with english traduction
+- `/lang:/` - Main portfolio and personal introduction
+- `/lang:/freelancer` - Information for clients interested in freelance work
+- `/lang:/hiring` - Information for companies interested in hiring
+
+# Redirections
+
+- `/` or `/**` - Redirect to default lenguage (es)
 
 # Installation and Development
 

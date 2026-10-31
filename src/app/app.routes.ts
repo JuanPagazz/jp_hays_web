@@ -1,16 +1,34 @@
 import { Routes } from '@angular/router';
+import { languageGuard } from './core/i18n/language.guard';
 
 export const routes: Routes = [
     {
+        path: ':lang',
+        canActivate: [languageGuard],
+        children: [
+            {
+                path: '',
+                loadComponent: () => import('./home/home').then((module) => module.Home),
+            },
+            {
+                path: 'freelancer',
+                loadComponent: () => import('./freelancer/freelancer').then((module) => module.Freelancer),
+            },
+            {
+                path: 'hiring',
+                loadComponent: () => import('./hiring/hiring').then((module) => module.Hiring),
+            },
+        ]
+    },
+
+    {
         path: '',
-        loadComponent: () => import('./home/home').then((m) => m.Home),
+        pathMatch: 'full',
+        redirectTo: 'es'
     },
+
     {
-        path: 'freelancer',
-        loadComponent: () => import('./freelancer/freelancer').then((m) => m.Freelancer),
-    },
-    {
-        path: 'hiring',
-        loadComponent: () => import('./hiring/hiring').then((m) => m.Hiring),
+        path: '**',
+        redirectTo: 'es'
     }
 ];
