@@ -41,7 +41,7 @@ https://juanpagazz.github.io/jp_hays_web/
             app.html          # Root component template
             app.routes.ts     # Application routes
             /core                # App general logic
-               /i18n                # Translation settings
+               /i18n                # Translation and languages settings
             /shared              # Reusable components
             /home                # Main page
                 /components        # Components for home

@@ -10,5 +10,4 @@ import { LanguageSelector } from '../shared-c/language-selector/language-selecto
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
-export class Home {
-}
+export class Home {}
