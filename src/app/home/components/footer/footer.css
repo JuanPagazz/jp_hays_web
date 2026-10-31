@@ -1,0 +1,93 @@
+:host {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    padding-top: clamp(.5rem, 3.2vw, 1.5rem);
+    padding-bottom: clamp(1rem, 5vw, 2rem);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.disponible {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: .65rem;
+    align-items: center;
+    z-index: 5;
+}
+
+.disponible .punto {
+    position: relative;
+    width: .75rem;
+    height: .75rem;
+    background-color: #00E599;
+    border-radius: 50%;
+    z-index: 5;
+    animation: punto-brillo 1.8s ease-in-out infinite;
+}
+
+.disponible .punto::before {
+    content: "";
+    position: absolute;
+    inset: -.3rem;
+    border-radius: 50%;
+    background-color: #00E599;
+    opacity: .35;
+    z-index: 4;
+    animation: halo-punto 1.8s ease-in-out infinite;
+    will-change: transorm, opacity;
+}
+
+@keyframes punto-brillo {
+    0%, 100% {
+        box-shadow: 0 0 0 rgba(0, 229, 153, 0);
+    }
+
+    50% {
+        box-shadow: 0 0 .45rem rgba(0, 229, 153, .8);
+    }
+}
+
+@keyframes halo-punto {
+    0%, 100% {
+        transform: scale(.75);
+        opacity: .2;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: .5;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .disponible .punto,
+    .disponible .punto::before {
+        animation: none;
+    }
+}
+
+.disponible p {
+    font-size: clamp(.725rem, 2.8vw, .9rem);
+    color: #8E9CAE;
+    z-index: 5;
+}
+
+.redes {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: .5rem;
+    align-items: center;
+    z-index: 5;
+}
+
+.redes img {
+    width: clamp(2rem, 6vw, 2.5rem);
+    cursor: pointer;
+    z-index: 5;
+}
