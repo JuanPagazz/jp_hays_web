@@ -9,14 +9,17 @@ export const homeEn = {
   cards: {
     question: 'What are you looking for?',
     freelanceLabel: 'FREELANCE',
-    freelanceTitle: 'I need a website',
+    freelanceTitle: 'I need',
+    freelanceTitleGreen: 'a website',
     freelanceDescription: 'If you have a business, project or idea and need a modern, functional website, I can help you.',
-    freelanceLink: 'View my services',
+    freelanceLink: 'View my services ->',
 
     hiringLabel: 'HIRE ME',
-    hiringTitle: 'I am looking for a developer',
+    hiringTitle: 'I am looking',
+    hiringTitleBr: 'for a',
+    hiringTitlePurple: 'developer',
     hiringDescription: 'If you are looking for a committed junior developer with web development skills, you can learn more about me here.',
-    hiringLink: 'Professional profile',
+    hiringLink: 'Professional profile ->',
   },
 
   footer: {

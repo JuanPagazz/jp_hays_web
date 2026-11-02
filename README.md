@@ -42,7 +42,7 @@ https://juanpagazz.github.io/jp_hays_web/
             app.routes.ts     # Application routes
             /core                # App general logic
                /i18n                # Translation and languages settings
-            /shared              # Reusable components
+            /shared-c              # Reusable components
             /home                # Main page
                 /components        # Components for home
                 /i18n              # Translation for home

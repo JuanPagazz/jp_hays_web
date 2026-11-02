@@ -9,15 +9,18 @@ export const homeEs = {
   cards: {
     question: '¿Qué estás buscando?',
     freelanceLabel: 'FREELANCE',
-    freelanceTitle: 'Necesito una página web',
+    freelanceTitle: 'Necesito una',
+    freelanceTitleGreen: 'página web',
     freelanceDescription: 'Si tienes un negocio, proyecto o idea y necesitas una página web moderna, funcional y a tu medida, puedo ayudarte.',
-    freelanceLink: 'Ver mis servicios',
+    freelanceLink: 'Ver mis servicios ->',
 
     hiringLabel: 'CONTRÁTAME',
-    hiringTitle: 'Estoy buscando un desarrollador',
+    hiringTitle: 'Estoy buscando',
+    hiringTitleBr: 'un',
+    hiringTitlePurple: 'desarrollador',
     hiringDescription:
       'Si buscas un perfil junior con ganas de aprender, comprometido y con habilidades en desarrollo web, aquí puedes conocer más sobre mí.',
-    hiringLink: 'Perfil profesional',
+    hiringLink: 'Perfil profesional ->',
   },
 
   footer: {
