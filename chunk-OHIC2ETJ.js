@@ -1,0 +1,1 @@
+import{Oa as t,Pa as r,ab as o,za as n}from"./chunk-FHQB7GMP.js";var a=class i{static \u0275fac=function(e){return new(e||i)};static \u0275cmp=n({type:i,selectors:[["app-hiring"]],decls:2,vars:0,template:function(e,m){e&1&&(t(0,"p"),o(1,"hiring works!"),r())},encapsulation:2})};export{a as Hiring};
