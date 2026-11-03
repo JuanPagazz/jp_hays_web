@@ -1,0 +1,43 @@
+<section class="intro" aria-labelledby="intro-title">
+  <div class="intro-content">
+    <svg class="intro-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <path class="symbol symbol-left"
+    pathLenght="1"
+    d="M 33 32 L 13 50 L 33 68" 
+          stroke="#4be3b5" 
+          stroke-width="7" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none" />
+          
+    <path class="symbol symbol-right"
+    pathLenght="1"
+    d="M 67 32 L 87 50 L 67 68" 
+          stroke="#4be3b5" 
+          stroke-width="7" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none" />
+          
+    <path class="symbol symbol-slash"
+    pathLenght="1"
+    d="M 54 24 L 46 76" 
+          stroke="#4be3b5" 
+          stroke-width="7" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none" />
+</svg>
+
+    <h1 id="intro-title">Juan Pablo Hays Garza</h1>
+
+    <p>{{ translations.home().intro.role }}</p>
+
+    <div class="intro-actions">
+        <app-language-selector></app-language-selector>
+      <button type="button" class="continue-button" (click)="continue()">
+        {{ translations.home().intro.explore }}
+      </button>
+    </div>
+  </div>
+</section>

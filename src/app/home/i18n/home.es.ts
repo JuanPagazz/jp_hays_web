@@ -31,4 +31,9 @@ export const homeEs = {
     spanish: 'Cambiar idioma a español',
     english: 'Cambiar idioma a inglés',
   },
+
+  intro: {
+    role: 'Desarrollador Front-End',
+    explore: 'Explorar'
+  }
 } as const;

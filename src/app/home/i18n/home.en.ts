@@ -30,4 +30,9 @@ export const homeEn = {
     spanish: 'Switch language to Spanish',
     english: 'Switch language to English',
   },
+
+  intro: {
+    role: 'Front End developer',
+    explore: 'Explore'
+  }
 } as const;

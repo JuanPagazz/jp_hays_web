@@ -1,13 +1,31 @@
+@if (showIntro()) {
+    <app-intro [class.is-closing]="closingIntro()" (completed)="finishIntro()" />
+}
+
 <header>
     <div class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <path d="M 38 32 L 18 50 L 38 68 M 62 32 L 82 50 L 62 68 M 56 24 L 44 76" 
-            stroke="#4be3b5" 
-            stroke-width="7" 
-            stroke-linecap="round" 
-            stroke-linejoin="round" 
-            fill="none" />
-        </svg>
+    <path d="M 33 32 L 13 50 L 33 68" 
+          stroke="#4be3b5" 
+          stroke-width="7" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none" />
+          
+    <path d="M 67 32 L 87 50 L 67 68" 
+          stroke="#4be3b5" 
+          stroke-width="7" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none" />
+          
+    <path d="M 54 24 L 46 76" 
+          stroke="#4be3b5" 
+          stroke-width="7" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none" />
+</svg>
         <h1>Juan Pablo Hays Garza</h1>
     </div>
     <app-language-selector></app-language-selector>

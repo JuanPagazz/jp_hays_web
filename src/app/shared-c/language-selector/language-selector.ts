@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { MatButtonToggleChange, MatButtonToggleModule} from '@angular/material/button-toggle';
 import { Router } from '@angular/router';
 import { Language,LanguageService } from '../../core/i18n/language.service';
+import { TranslationService } from '../../core/i18n/translation.service';
 
 @Component({
   selector: 'app-language-selector',
@@ -10,6 +11,7 @@ import { Language,LanguageService } from '../../core/i18n/language.service';
   styleUrl: './language-selector.css',
 })
 export class LanguageSelector {
+  readonly translations = inject(TranslationService)
   readonly languageService = inject(LanguageService);
 
   private readonly router = inject(Router);
