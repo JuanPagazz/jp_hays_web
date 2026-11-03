@@ -105,6 +105,7 @@
 
 :host {
   display: block;
+  position: relative;
 }
 
 :host(.is-closing) .intro {
@@ -130,4 +131,18 @@
     transform: none;
     stroke-dashoffset: 0;
   }
+}
+
+.mouse-glow {
+    position: fixed;
+    inset: 0;
+    z-index: 21;
+    pointer-events: none;
+    background: radial-gradient(
+        circle 16rem at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        rgba(0, 255, 162, 0.24),
+        rgba(0, 255, 163, .12) 35%,
+        transparent 75%
+    );
+    transition: background 120ms ease-out;
 }
