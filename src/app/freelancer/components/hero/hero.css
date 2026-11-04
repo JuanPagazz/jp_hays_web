@@ -1,18 +1,26 @@
 :host {
     width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
 }
 
 .texto {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .url {
     display: flex;
     flex-flow: row nowrap;
     gap: .8rem;
+}
+
+.url a,
+.url p {
+    font-size: .75rem;
 }
 
 .url a {
@@ -41,16 +49,21 @@
 
 .disponible h5 {
     color: #00FFA3;
+    font-size: .65rem;
+    letter-spacing: .15rem;
 }
 
 .hero {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    gap: 1.5rem;
 }
 
 .hero h2 {
     color: white;
+    font-size: clamp(2.5rem, 11vw, 3rem);
+    line-height: 1.05;
 }
 
 .hero .verde {
@@ -59,30 +72,36 @@
 }
 
 .hero p {
+    width: clamp(85%, calc(100% - 3.5vw), 100%);
     color: #8E9CAE;
+    font-size: 1rem;
+    line-height: 1.75;
 }
 
 .botones {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    gap: .8rem;
+    align-items: center;
+    gap: .25rem;
 }
 
 .botones .idea {
     color: black;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
     background-color: #00FFA3;
     cursor: pointer;
+    font-size: .75rem;
 }
 
 .botones .trabajo {
     color: white;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 1rem .75rem;
+    border-radius: .5rem;
     background: none;
     cursor: pointer;
+    font-size: .75rem;
 }
 
 .check {
@@ -99,23 +118,25 @@
 
 .check p {
     color: #5f7384;
+    font-size: .65rem;
 }
 
 .img {
-    width: 100%;
+    width: clamp(18rem, calc(100% - 2vw), 100%);
+    min-height: 18rem;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 5rem;
+    align-items: flex-start;
+    padding-bottom: 2rem;
     background: radial-gradient(ellipse, rgba(0, 229, 160, .16), transparent 68%);
 }
 
 .img .orbit-two {
     position: absolute;
     top: 10%;
-    width: 200px;
-    height: 200px;
+    width: 14rem;
+    height: 14rem;
     border-radius: 50%;
     border: 2px dashed rgba(0, 229, 160, .09);
 }
@@ -123,14 +144,14 @@
 .img .orbit {
     position: absolute;
     top: 0;
-    width: 260px;
-    height: 260px;
+    width: 18rem;
+    height: 18rem;
     border-radius: 50%;
     border: 2px solid rgba(0, 229, 160, .09);
 }
 
 .img .tresd {
-    width: 12rem;
+    width: 17rem;
     z-index: 1;
     animation: float 7s ease-in-out infinite;
 }
@@ -146,9 +167,239 @@
 }
 
 .img .code {
-    width: 12rem;
+    width: clamp(12rem, 72%, 13rem);
     position: absolute;
     bottom: 1%;
-    left: 2%;
+    left: 0;
     z-index: 2;
+}
+
+@media (min-width: 580px) {
+    .img {
+        align-items: center;
+    }
+
+    .img .code {
+        left: 10%;
+    }
+
+    .hero p {
+        width: clamp(80%, 100% - 18vw, 100%);
+    }
+}
+
+@media (min-width: 768px) {
+    :host {
+        gap: 1.5rem;
+    }
+
+    .texto {
+        gap: 2rem;
+    }
+
+    .url a,
+    .url p {
+        font-size: .85rem;
+    }
+
+    .disponible h5 {
+        font-size: .7rem;
+    }
+
+    .hero {
+        gap: 1.75rem;
+    }
+
+    .hero h2 {
+        font-size: clamp(3rem, 6.5vw, 4rem);
+    }
+
+    .hero p {
+        width: min(38rem, calc(100% - 4vw));
+        font-size: 1.05rem;
+    }
+
+    .botones {
+        gap: .5rem;
+    }
+
+    .botones .idea,
+    .botones .trabajo {
+        padding: 1.1rem 1.35rem;
+        font-size: .85rem;
+    }
+
+    .check p {
+        font-size: .7rem;
+    }
+
+    .img {
+        min-height: 22rem;
+    }
+
+    .img .tresd {
+        width: 22rem;
+    }
+
+    .img .code {
+        width: clamp(14rem, 72%, 16rem);
+    }
+
+    .img .orbit {
+        width: clamp(18rem, 46vw, 24rem);
+        height: clamp(18rem, 46vw, 24rem);
+    }
+
+    .img .orbit-two {  
+        width: clamp(14rem, 32vw, 18rem);
+        height: clamp(14rem, 32vw, 18rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    :host {
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: clamp(1.5rem, 3vw, 3rem);
+    }
+
+    .texto {
+        width: 52%;
+        gap: clamp(2rem, 3vw, 3rem);
+    }
+
+    .url a,
+    .url p {
+        font-size: .9rem;
+    }
+
+    .disponible h5 {
+        font-size: .75rem;
+    }
+
+    .hero {
+        gap: clamp(1.5rem, 2.5vw, 2.25rem);
+    }
+
+    .hero h2 {
+        font-size: clamp(3.75rem, 5vw, 4.75rem);
+    }
+
+    .hero p {
+        width: min(34rem, calc(100% - 3vw));
+        font-size: clamp(1rem, 1.35vw, 1.2rem);
+        line-height: 1.7;
+    }
+
+    .botones {
+        gap: .75rem;
+    }
+
+    .botones .idea,
+    .botones .trabajo {
+        padding: 1.2rem 1.4rem;
+        font-size: .9rem;
+    }
+
+    .check p {
+        font-size: .75rem;
+    }
+
+    .img {
+        width: clamp(22rem, calc(48% - 2vw), 40rem);
+        min-height: 30rem;
+        padding-bottom: 3rem;
+    }
+
+    .img .orbit-two {
+        width: clamp(14rem, 24vw, 32rem);
+        height: clamp(14rem, 24vw, 32rem);
+        top: calc(20% - 4.5vw);
+    }
+
+    .img .orbit {
+        width: clamp(18rem, 32vw, 46rem);
+        height: clamp(18rem, 32vw, 46rem);
+        top: calc(12% - 5vw);
+    }
+
+    .img .tresd {
+        width: clamp(20rem, 28vw, 27rem);
+    }
+
+    .img .code {
+        width: clamp(14rem, 18vw, 18rem);
+        left: 0;
+        bottom: 12%;
+    }
+}
+
+@media (min-width: 1440px) {
+    :host {
+        gap: clamp(2rem, 3.5vw, 4.5rem);
+    }
+
+    .texto {
+        width: 50%;
+        gap: clamp(2.5rem, 3.2vw, 4rem);
+    }
+
+    .url a,
+    .url p {
+        font-size: 1rem;
+    }
+
+    .disponible h5 {
+        font-size: .85rem;
+    }
+
+    .hero {
+        gap: clamp(1.75rem, 2.5vw, 2.75rem);
+    }
+
+    .hero h2 {
+        font-size: clamp(4.5rem, 5vw, 6rem);
+    }
+
+    .hero p {
+        width: min(42rem, calc(100% - 3vw));
+        font-size: clamp(1.15rem, 1.35vw, 1.5rem);
+    }
+
+    .botones .idea,
+    .botones .trabajo {
+        padding: 1.35rem 1.6rem;
+        font-size: 1rem;
+    }
+
+    .check p {
+        font-size: .85rem;
+    }
+
+    .img {
+        min-height: 36rem;
+    }
+
+    .img .orbit {
+        top: 0;
+    }
+
+    .img .orbit-two {
+        top: 10%;
+    }
+
+    .img .tresd {
+        width: clamp(25rem, 30vw, 34rem);
+    }
+
+    .img .code {
+        width: clamp(17rem, 19vw, 22rem);
+        bottom: 9%;
+    }
+}
+
+@media (min-width: 1635px) {
+    .img .code {
+        bottom: 0;
+    }
 }
