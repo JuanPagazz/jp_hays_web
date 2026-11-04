@@ -1,0 +1,154 @@
+:host {
+    width: 100%;
+}
+
+.texto {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.url {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: .8rem;
+}
+
+.url a {
+    color: white;
+    text-decoration: none;
+}
+
+.url p {
+    color: #6e7f93;
+}
+
+.disponible {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: .5rem;
+}
+
+.disponible .punto {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background-color: #00FFA3;
+}
+
+.disponible h5 {
+    color: #00FFA3;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.hero h2 {
+    color: white;
+}
+
+.hero .verde {
+    color: #00FFA3;
+    display: block;
+}
+
+.hero p {
+    color: #8E9CAE;
+}
+
+.botones {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: .8rem;
+}
+
+.botones .idea {
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #00FFA3;
+    cursor: pointer;
+}
+
+.botones .trabajo {
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: none;
+    cursor: pointer;
+}
+
+.check {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: .5rem;
+}
+
+.check svg {
+    width: 1rem;
+}
+
+.check p {
+    color: #5f7384;
+}
+
+.img {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    background: radial-gradient(ellipse, rgba(0, 229, 160, .16), transparent 68%);
+}
+
+.img .orbit-two {
+    position: absolute;
+    top: 10%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px dashed rgba(0, 229, 160, .09);
+}
+
+.img .orbit {
+    position: absolute;
+    top: 0;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 229, 160, .09);
+}
+
+.img .tresd {
+    width: 12rem;
+    z-index: 1;
+    animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(0px, 0px) rotate(-4deg);
+    }
+
+    50% {
+        transform: translate(0px, -12px) rotate(0);
+    }
+}
+
+.img .code {
+    width: 12rem;
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+    z-index: 2;
+}
