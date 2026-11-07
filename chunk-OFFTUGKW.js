@@ -1,1 +1,0 @@
-import{Oa as r,Pa as a,ab as c,za as t}from"./chunk-FHQB7GMP.js";var o=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=t({type:n,selectors:[["app-freelancer"]],decls:2,vars:0,template:function(e,i){e&1&&(r(0,"p"),c(1,"freelancer works!"),a())},encapsulation:2})};export{o as Freelancer};
