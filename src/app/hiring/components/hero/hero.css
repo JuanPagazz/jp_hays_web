@@ -10,6 +10,7 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 1.5rem;
+    view-transition-name: hiring-card;
 }
 
 .url {
@@ -154,6 +155,7 @@
     width: 16rem;
     z-index: 1;
     animation: float 7s ease-in-out infinite;
+    view-transition-name: hiring-art;
 }
 
 @keyframes float {
@@ -172,6 +174,7 @@
     bottom: 0;
     left: -4%;
     z-index: 2;
+    view-transition-name: hiring-code;
 }
 
 @media (min-width: 580px) {

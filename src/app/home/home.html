@@ -2,15 +2,17 @@
     <app-intro [class.is-closing]="closingIntro()" (completed)="finishIntro()" />
 }
 
-<app-header></app-header>
-<main>
-    <div class="background-image">
-        <img src="home_bg_image_mobile.png" alt="Background image">
-    </div>
-    <div class="background-image-responsive">
-        <img src="home_bg_image_pc.png" alt="Background image">
-    </div>
-    <app-presentacion></app-presentacion>
-    <app-tarjetas></app-tarjetas>
-    <app-footer></app-footer>
-</main>
+<div class="home-content" [class.is-hidden]="showIntro()" [class.is-revealing]="closingIntro()">
+    <app-header></app-header>
+    <main>
+        <div class="background-image">
+            <img src="home_bg_image_mobile.png" alt="Background image">
+        </div>
+        <div class="background-image-responsive">
+            <img src="home_bg_image_pc.png" alt="Background image">
+        </div>
+        <app-presentacion></app-presentacion>
+        <app-tarjetas></app-tarjetas>
+        <app-footer></app-footer>
+    </main>
+</div>
