@@ -118,6 +118,15 @@ section h4 {
     z-index: 3;
 }
 
+.flechaE {
+    transition: all .3s ease;
+    transform: translateX(2.5px);
+}
+
+.empleo a:hover .flechaE {
+    transform: translateX(12px);
+}
+
 .empleo .bg-img {
     position: absolute;
     top: 5%;
@@ -196,6 +205,15 @@ section h4 {
     border-radius: 1rem;
     cursor: pointer;
     z-index: 3;
+}
+
+.flechaS {
+    transition: all .3s ease;
+    transform: translateX(2.5px);
+}
+
+.servicios a:hover .flechaS {
+    transform: translateX(12px);
 }
 
 .servicios .bg-img {

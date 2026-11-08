@@ -5,7 +5,7 @@ export const freelancerEs = {
         greenTitle: 'una gran web.',
         description: 'Diseño y desarrollo sitios web que conectan tu idea con las personas. Claros, funcionales y con personalidad. Como tu proyecto.',
         colorButton: 'Hablemos de tu idea',
-        button: 'Explorar mi trabajo ⬇',
+        button: 'Explorar mi trabajo',
         footer: 'De la primera conversacion al último detalle'
     }
 }
