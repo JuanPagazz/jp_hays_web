@@ -1,0 +1,27 @@
+<nav
+  class="cards-nav"
+  [class.hiring]="variant === 'hiring'"
+  [attr.aria-label]="translations.home().navigation.menu"
+>
+  <a
+    class="nav-item"
+    [routerLink]="['/', languageService.language()]"
+    [state]="{ skipIntro: true }"
+    [attr.aria-label]="translations.home().navigation.home"
+  >
+    <mat-icon aria-hidden="true">dashboard</mat-icon>
+    <span>{{ translations.home().navigation.home }}</span>
+  </a>
+  <button class="nav-item active" type="button" aria-current="page">
+    <mat-icon aria-hidden="true">code</mat-icon>
+    <span>{{ translations.home().navigation.services }}</span>
+  </button>
+  <button class="nav-item" type="button">
+    <mat-icon aria-hidden="true">work_outline</mat-icon>
+    <span>{{ translations.home().navigation.projects }}</span>
+  </button>
+  <button class="nav-item" type="button">
+    <mat-icon aria-hidden="true">chat_bubble_outline</mat-icon>
+    <span>{{ translations.home().navigation.contact }}</span>
+  </button>
+</nav>

@@ -92,7 +92,7 @@
     padding: 1rem 1.25rem;
     border-radius: .5rem;
     background-color: #00FFA3;
-    cursor: pointer;
+    cursor: not-allowed;
     font-size: .75rem;
 }
 
@@ -101,7 +101,7 @@
     padding: 1rem .75rem;
     border-radius: .5rem;
     background: none;
-    cursor: pointer;
+    cursor: not-allowed;
     font-size: .75rem;
 }
 

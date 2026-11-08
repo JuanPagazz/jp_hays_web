@@ -12,7 +12,7 @@ export const homeEs = {
     freelanceTitle: 'Necesito una',
     freelanceTitleGreen: 'página web',
     freelanceDescription: 'Si tienes un negocio, proyecto o idea y necesitas una página web moderna, funcional y a tu medida, puedo ayudarte.',
-    freelanceLink: 'Ver mis servicios ->',
+    freelanceLink: 'Ver mis servicios ➜',
 
     hiringLabel: 'CONTRÁTAME',
     hiringTitle: 'Estoy buscando',
@@ -20,7 +20,7 @@ export const homeEs = {
     hiringTitlePurple: 'desarrollador',
     hiringDescription:
       'Si buscas un perfil junior con ganas de aprender, comprometido y con habilidades en desarrollo web, aquí puedes conocer más sobre mí.',
-    hiringLink: 'Perfil profesional ->',
+    hiringLink: 'Perfil profesional ➜',
   },
 
   footer: {
@@ -28,6 +28,11 @@ export const homeEs = {
   },
 
   navigation: {
+    menu: 'Navegación principal',
+    home: 'Inicio',
+    services: 'Servicios',
+    projects: 'Proyectos',
+    contact: 'Contacto',
     spanish: 'Cambiar idioma a español',
     english: 'Cambiar idioma a inglés',
   },

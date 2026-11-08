@@ -1,0 +1,139 @@
+:host {
+  position: sticky;
+  bottom: 1rem;
+  z-index: 20;
+  display: block;
+}
+
+.cards-nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0.35rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 0.9rem;
+  background: rgba(13, 20, 30, 0.96);
+  box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(14px);
+}
+
+.nav-item {
+  display: flex;
+  min-width: 0;
+  min-height: 2.8rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.35rem;
+  border: 0;
+  border-radius: 0.65rem;
+  background: transparent;
+  color: #94a3b8;
+  font: inherit;
+  font-size: 0.7rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+a.nav-item {
+  cursor: pointer;
+}
+
+button.nav-item {
+  cursor: not-allowed;
+}
+
+.nav-item mat-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex: 0 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+}
+
+.nav-item.active {
+  background: rgba(10, 112, 99, 0.25);
+  color: #4be3b5;
+}
+
+.cards-nav.hiring .nav-item.active {
+  background: rgba(92, 130, 255, 0.2);
+  color: #5c82ff;
+}
+
+.nav-item:focus-visible {
+  outline: 2px solid #4be3b5;
+  outline-offset: 2px;
+}
+
+.cards-nav.hiring .nav-item:focus-visible {
+  outline-color: #5c82ff;
+}
+
+@media (min-width: 768px) {
+  :host {
+    top: 0.75rem;
+  }
+
+  .cards-nav {
+    padding: 0.45rem;
+    border-radius: 1rem;
+  }
+
+  .nav-item {
+    min-height: 3.1rem;
+    gap: 0.55rem;
+    padding: 0.55rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .nav-item mat-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :host {
+    top: 1rem;
+  }
+
+  .cards-nav {
+    max-width: 42rem;
+    padding: 0.5rem;
+  }
+
+  .nav-item {
+    min-height: 3.25rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  :host {
+    top: 1.25rem;
+  }
+
+  .cards-nav {
+    max-width: 46rem;
+    padding: 0.6rem;
+    border-radius: 1.1rem;
+  }
+
+  .nav-item {
+    min-height: 3.5rem;
+    gap: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-item mat-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
+}
