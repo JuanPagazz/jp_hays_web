@@ -28,24 +28,24 @@
     </div>
     <div class="tarjetas">
         <div class="servicios">
-            <img src="freelancer-icon.png" alt="Freelancer" class="icon">
+            <img [attr.src]="loadImages ? 'freelancer-icon.png' : null" alt="Freelancer" class="icon" width="351" height="329" [attr.loading]="loadImages ? 'eager' : 'lazy'" decoding="async">
             <div class="servicios-texto">
                 <h5>{{ translations.home().cards.freelanceLabel }}</h5>
                 <h3>{{ translations.home().cards.freelanceTitle }} <span class="verde">{{ translations.home().cards.freelanceTitleGreen }}</span></h3>
                 <p>{{ translations.home().cards.freelanceDescription }}</p>
             </div>
             <a [routerLink]="['freelancer']">{{ translations.home().cards.freelanceLink }} <span class="flechaS">➜</span></a>
-            <img src="freelancer-img.png" alt="Freelancer" class="bg-img">
+            <img [attr.src]="loadImages ? 'freelancer-img.png' : null" alt="Freelancer" class="bg-img" width="578" height="511" [attr.loading]="loadImages ? 'eager' : 'lazy'" decoding="async">
         </div>
         <div class="empleo">
-            <img src="hiring-icon.png" alt="Hiring" class="icon">
+            <img [attr.src]="loadImages ? 'hiring-icon.png' : null" alt="Hiring" class="icon" width="350" height="330" [attr.loading]="loadImages ? 'eager' : 'lazy'" decoding="async">
             <div class="empleo-texto">
                 <h5>{{translations.home().cards.hiringLabel }}</h5>
                 <h3>{{ translations.home().cards.hiringTitle }} <span class="br">{{ translations.home().cards.hiringTitleBr }} <span class="morado">{{ translations.home().cards.hiringTitlePurple}}</span></span></h3>
                 <p>{{ translations.home().cards.hiringDescription }}</p>
             </div>
             <a [routerLink]="['hiring']">{{ translations.home().cards.hiringLink }} <span class="flechaE">➜</span></a>
-            <img src="hiring-img.png" alt="Hiring" class="bg-img">
+            <img [attr.src]="loadImages ? 'hiring-img.png' : null" alt="Hiring" class="bg-img" width="560" height="510" [attr.loading]="loadImages ? 'eager' : 'lazy'" decoding="async">
         </div>
     </div>
 </section>

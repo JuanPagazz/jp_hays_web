@@ -96,6 +96,7 @@ section {
 
 .redes img {
     width: clamp(2rem, 6vw, 2.5rem);
+    height: auto;
     cursor: pointer;
     z-index: 5;
 }

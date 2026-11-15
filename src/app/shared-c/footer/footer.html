@@ -5,9 +5,9 @@
         <p>{{translations.home().footer.available }}</p>
     </div>
     <div class="redes">
-        <a href="https://github.com/JuanPagazz" target="_blank" rel="noopener noreferrer"><img src="github-icon.png" alt="Github"></a>
-        <a href="https://linkedin.com/in/jp-hays" target="_blank" rel="noopener noreferrer"><img src="linkedin-icon.png" alt="Linkedin"></a>
-        <a href="mailto:jphaysgaz@gmail.com" target="_blank" rel="noopener noreferrer"><img src="correo-icon.png" alt="E-Mail"></a>
-        <a href="https://wa.me/528110024975" target="_blank" rel="noopener noreferrer"><img src="whatsapp-icon.png" alt="Whatsapp"></a>
+        <a href="https://github.com/JuanPagazz" target="_blank" rel="noopener noreferrer"><img [attr.src]="loadImages ? 'github-icon.png' : null" alt="Github" width="169" height="169" [attr.loading]="loadImages ? 'eager' : 'lazy'" decoding="async"></a>
+        <a href="https://linkedin.com/in/jp-hays" target="_blank" rel="noopener noreferrer"><img [attr.src]="loadImages ? 'linkedin-icon.png' : null" alt="Linkedin" width="168" height="168" [attr.loading]="loadImages ? 'eager' : 'lazy'" decoding="async"></a>
+        <a href="mailto:jphaysgaz@gmail.com" target="_blank" rel="noopener noreferrer"><img [attr.src]="loadImages ? 'correo-icon.png' : null" alt="E-Mail" width="169" height="169" [attr.loading]="loadImages ? 'eager' : 'lazy'" decoding="async"></a>
+        <a href="https://wa.me/528110024975" target="_blank" rel="noopener noreferrer"><img [attr.src]="loadImages ? 'whatsapp-icon.png' : null" alt="Whatsapp" width="169" height="169" [attr.loading]="loadImages ? 'eager' : 'lazy'" decoding="async"></a>
     </div>
 </section>

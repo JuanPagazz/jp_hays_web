@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { TranslationService } from '../../core/i18n/translation.service';
 
 @Component({
@@ -8,5 +8,7 @@ import { TranslationService } from '../../core/i18n/translation.service';
   styleUrl: './footer.css',
 })
 export class Footer {
+  @Input() loadImages = true;
+
   readonly translations = inject(TranslationService)
 }

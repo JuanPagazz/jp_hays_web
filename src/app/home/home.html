@@ -5,14 +5,20 @@
 <div class="home-content" [class.is-hidden]="showIntro()" [class.is-revealing]="closingIntro()">
     <app-header></app-header>
     <main>
-        <div class="background-image">
-            <img src="home_bg_image_mobile.png" alt="Background image">
-        </div>
-        <div class="background-image-responsive">
-            <img src="home_bg_image_pc.png" alt="Background image">
-        </div>
-        <app-presentacion></app-presentacion>
-        <app-tarjetas></app-tarjetas>
-        <app-footer></app-footer>
+        <picture class="background-image">
+            <source media="(min-width: 768px)" [attr.srcset]="!showIntro() || closingIntro() ? 'home_bg_image_pc.png' : null">
+            <img
+                [attr.src]="!showIntro() || closingIntro() ? 'home_bg_image_mobile.png' : null"
+                alt="Background image"
+                width="1078"
+                height="1024"
+                decoding="async"
+                [attr.loading]="!showIntro() || closingIntro() ? 'eager' : 'lazy'"
+                [attr.fetchpriority]="!showIntro() || closingIntro() ? 'high' : 'low'"
+            >
+        </picture>
+        <app-presentacion [loadImages]="!showIntro() || closingIntro()"></app-presentacion>
+        <app-tarjetas [loadImages]="!showIntro() || closingIntro()"></app-tarjetas>
+        <app-footer [loadImages]="!showIntro() || closingIntro()"></app-footer>
     </main>
 </div>

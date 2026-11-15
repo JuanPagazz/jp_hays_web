@@ -21,4 +21,17 @@ describe('Home', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should defer home images until the intro starts closing', () => {
+    const images = Array.from(fixture.nativeElement.querySelectorAll('img')) as HTMLImageElement[];
+
+    expect(images.length).toBeGreaterThan(0);
+    expect(images.some((image) => image.hasAttribute('src'))).toBe(false);
+
+    component.finishIntro();
+    fixture.detectChanges();
+
+    expect(images.every((image) => image.hasAttribute('src'))).toBe(true);
+    expect(images.every((image) => image.getAttribute('loading') === 'eager')).toBe(true);
+  });
 });

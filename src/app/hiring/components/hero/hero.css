@@ -133,6 +133,10 @@
     background: radial-gradient(ellipse, rgba(128, 153, 255, .16), transparent 68%);
 }
 
+.img picture {
+    display: contents;
+}
+
 .img .orbit-two {
     position: absolute;
     top: 10%;
@@ -153,6 +157,7 @@
 
 .img .tresd {
     width: 16rem;
+    height: auto;
     z-index: 1;
     animation: float 7s ease-in-out infinite;
     view-transition-name: hiring-art;
@@ -170,6 +175,7 @@
 
 .img .code {
     width: clamp(12rem, 72%, 13rem);
+    height: auto;
     position: absolute;
     bottom: 0;
     left: -4%;

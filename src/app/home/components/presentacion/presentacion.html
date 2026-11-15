@@ -4,19 +4,19 @@
     <p>{{ translations.home().presentation.description }}</p>
     <div class="tecnologias">
         <div class="tecnologia">
-            <img src="angular-icon.png" alt="Angular">
+            <img [attr.src]="loadImages ? 'angular-icon.png' : null" alt="Angular" width="219" height="229" [attr.loading]="loadImages ? 'eager' : 'lazy'" decoding="async">
             <p>Angular</p>
         </div>
         <div class="tecnologia">
-            <img src="html-icon.png" alt="HTML">
+            <img [attr.src]="loadImages ? 'html-icon.png' : null" alt="HTML" width="172" height="209" [attr.loading]="loadImages ? 'eager' : 'lazy'" decoding="async">
             <p>HTML</p>
         </div>
         <div class="tecnologia">
-            <img src="css-icon.png" alt="CSS">
+            <img [attr.src]="loadImages ? 'css-icon.png' : null" alt="CSS" width="187" height="211" [attr.loading]="loadImages ? 'eager' : 'lazy'" decoding="async">
             <p>CSS</p>
         </div>
         <div class="tecnologia">
-            <img src="js-icon.png" alt="JavaScript">
+            <img [attr.src]="loadImages ? 'js-icon.png' : null" alt="JavaScript" width="197" height="203" [attr.loading]="loadImages ? 'eager' : 'lazy'" decoding="async">
             <p>JavaScript</p>
         </div>
     </div>

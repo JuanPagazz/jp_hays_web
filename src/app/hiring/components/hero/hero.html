@@ -36,6 +36,12 @@
 <section class="img">
     <div class="orbit"></div>
     <div class="orbit-two"></div>
-    <img src="hiring-img.png" alt="Freelancer" class="tresd">
-    <img src="hiring-code.png" alt="Freelancer code" class="code">
+    <picture class="tresd-source">
+        <source srcset="hiring-img.webp" type="image/webp">
+        <img src="hiring-img.png" alt="Freelancer" class="tresd" width="560" height="510" fetchpriority="high" decoding="async">
+    </picture>
+    <picture class="code-source">
+        <source srcset="hiring-code.webp" type="image/webp">
+        <img src="hiring-code.png" alt="Freelancer code" class="code" width="1536" height="1024" fetchpriority="low" decoding="async">
+    </picture>
 </section>
